@@ -11,17 +11,16 @@ def blog_view(request):
         }
     return render(request,'blog.html',context)
 # Create your views here.
-def blog_create_view(request):
-    
-    context = {}
-    return render(request,'create.html',context)
-
 #def blog_create_view(request):
-#    form = BlogModelForm(request.POST or None)
-#    if form.is_valid():
-#        form.save()
-#        form = BlogModelForm()
-#    context = {
-#        'form': form
-#        }
+#    context = {}
 #    return render(request,'create.html',context)
+
+def blog_create_view(request):
+    form = BlogModelForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+        form = BlogModelForm()
+    context = {
+        'form': form
+        }
+    return render(request,'create.html',context)

@@ -11,7 +11,7 @@ from blog import views as blogViews
 
 
 urlpatterns = [
-    path('', views.home, name='home'),
+    path('', blogViews.blog_view, name='home'),
     path('contact/', views.contact, name='contact'),
     path('blog/', blogViews.blog_view, name ='blog'),
     path('create/', blogViews.blog_create_view, name ='createBlog'),

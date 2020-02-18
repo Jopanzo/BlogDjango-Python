@@ -9,7 +9,8 @@
 </head>
 <body>
     {% include 'navbar.html' %}
-   <form method="POST">
+   <form method="POST">{% csrf_token %}
+       {{ form.as_p}}
        <input type="text" name="title" placeholder="Title"/>
        <input type="submit" value="save"/>
    </form>

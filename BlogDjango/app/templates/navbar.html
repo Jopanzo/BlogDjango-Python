@@ -1,2 +1,11 @@
-﻿
-<div class= "navbar"><p>Navbar Test</p></div>
+﻿{% load static %}
+    <link rel="stylesheet" href = "{% static 'app/CSS/navbar.css' %}">
+<div class= "navbar">
+    
+    <ul class="navbar_ul">
+        <li><a href ="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'createBlog' %}">Create Blogs</a></li>
+        <li><a>View Blogs</a></li>
+    </ul>
+    
+</div>
