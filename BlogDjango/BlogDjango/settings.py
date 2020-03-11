@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'blog',
+    'user'
+    'rest_framework',
 ]
 
 # Middleware framework
@@ -83,7 +85,7 @@ DATABASES = {
         'NAME': 'jpnzo',                      # Or path to database file if using sqlite3.
         # The following settings are not used with sqlite3:
         'USER': 'root',
-        'PASSWORD': 'mysqlPassword!',
+        'PASSWORD': 'myPassword!',     # Not actual password.
         'HOST': '127.0.0.1',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '3306',
     }

@@ -15,6 +15,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     path('blog/', blogViews.blog_view, name ='blog'),
     path('create/', blogViews.blog_create_view, name ='createBlog'),
+    path('view/', blogViews.blog_views, name ='viewBlogs'),
     path('about/', views.about, name='about'),
     path('login/',
          LoginView.as_view

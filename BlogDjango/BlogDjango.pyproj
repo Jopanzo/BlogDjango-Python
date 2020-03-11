@@ -58,6 +58,7 @@
     <Folder Include="BlogDjango\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\templates\viewBlogs.html" />
     <Content Include="app\templates\blog.html" />
     <Content Include="app\static\app\CSS\navbar.css" />
     <Content Include="app\templates\navbar.html" />

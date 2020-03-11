@@ -24,3 +24,6 @@ def blog_create_view(request):
         'form': form
         }
     return render(request,'create.html',context)
+def blog_views(request):
+
+    return render(request, 'viewBlogs.html')
