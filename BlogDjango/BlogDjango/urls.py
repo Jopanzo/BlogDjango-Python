@@ -3,7 +3,7 @@ Definition of urls for BlogDjango.
 """
 
 from datetime import datetime
-from django.urls import path
+from django.urls import path, include
 from django.contrib import admin
 from django.contrib.auth.views import LoginView, LogoutView
 from app import forms, views
@@ -11,7 +11,8 @@ from blog import views as blogViews
 
 
 urlpatterns = [
-    path('', blogViews.blog_view, name='home'),
+    path('', include('user.urls')),
+    path('home/', blogViews.blog_view, name='home'),
     path('contact/', views.contact, name='contact'),
     path('blog/', blogViews.blog_view, name ='blog'),
     path('create/', blogViews.blog_create_view, name ='createBlog'),
