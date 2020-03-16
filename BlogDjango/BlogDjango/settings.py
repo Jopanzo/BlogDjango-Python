@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'blog',
     'user',
     'rest_framework',
+    'frontend',
 ]
 
 # Middleware framework
